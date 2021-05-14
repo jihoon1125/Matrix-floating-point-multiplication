@@ -1,0 +1,98 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    project.o(project) refers to project.o(Matrix) for Matrix_data
+    project.o(project) refers to project.o(Result) for Result_data
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    project                                  0x00000000   Section      964  project.o(project)
+    Project.s                                0x00000000   Number         0  project.o ABSOLUTE
+    Matrix                                   0x000003c4   Section     7200  project.o(Matrix)
+    Matrix_data                              0x000003c4   Data           0  project.o(Matrix)
+    Result                                   0x00001fe4   Section        4  project.o(Result)
+    Result_data                              0x00001fe4   Data           0  project.o(Result)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv2$ARM_ISAv5$E$P$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00001fe8, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000003c4, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000003c4   Code   RO            1  * project             project.o
+
+
+    Execution Region ER_RW (Exec base: 0x000003c4, Load base: 0x000003c4, Size: 0x00001c24, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x000003c4   0x000003c4   0x00001c20   Data   RW            2    Matrix              project.o
+    0x00001fe4   0x00001fe4   0x00000004   Data   RW            3    Result              project.o
+
+
+    Execution Region ER_ZI (Exec base: 0x00001fe8, Load base: 0x00001fe8, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       964         20          0       7204          0        452   project.o
+
+    ----------------------------------------------------------------------
+       964         20          0       7204          0        452   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       964         20          0       7204          0        452   Grand Totals
+       964         20          0       7204          0        452   ELF Image Totals
+       964         20          0       7204          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  964 (   0.94kB)
+    Total RW  Size (RW Data + ZI Data)              7204 (   7.04kB)
+    Total ROM Size (Code + RO Data + RW Data)       8168 (   7.98kB)
+
+==============================================================================
+
